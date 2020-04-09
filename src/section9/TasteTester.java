@@ -15,7 +15,7 @@ public class TasteTester {
         System.out.println("Flavor is " + birthdayCake.getFlavor());
 
         WeaddingCake weaddingCake = new WeaddingCake();
-        weaddingCake.setFlavor(" pina colada");
+        weaddingCake.setFlavor("pina colada");
         System.out.println("Weaddingcake has " + weaddingCake.getFlavor() + " flavor");
         System.out.println("Price of weaddingcake is " + weaddingCake.getPrice());
 
