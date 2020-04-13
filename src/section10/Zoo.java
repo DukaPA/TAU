@@ -18,14 +18,6 @@ public class Zoo {
         feed(cheda);
     }
     public static void feed(Animal animal){
-       /* Dog cheda = new Dog();
-        cheda.makeSound();
-        cheda.fetch();
-        feed(cheda);
-
-        Animal lea = new Dog();
-        lea.makeSound();
-        feed(lea);*/
 
         if (animal instanceof Dog){
             System.out.println("here is your dog food");
