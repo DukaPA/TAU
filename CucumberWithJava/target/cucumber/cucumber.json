@@ -1,0 +1,179 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-08T22:15:52.897Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3764980800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Steps.setup() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login Successful",
+        "description": "",
+        "id": "login-functionality;login-successful;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 51869400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Steps.quietBrowser() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2374051300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in the login page of Para Bank application",
+            "match": {
+              "location": "Steps.Steps.iAmInTheLoginPageOfParaBankApplication() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 900373800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid \"john\" and \"demo\" with \"John Smith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"demo\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"John Smith\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Steps.Steps.i_enter_valid_credentials(String,String,String) in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 612191700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be taken to the Overview page",
+            "match": {
+              "location": "Steps.Steps.i_should_be_taken_to_the_Overview_page() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-08T22:16:00.612Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3056910900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Steps.setup() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login Successful",
+        "description": "",
+        "id": "login-functionality;login-successful;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 44881900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Steps.quietBrowser() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2434811500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in the login page of Para Bank application",
+            "match": {
+              "location": "Steps.Steps.iAmInTheLoginPageOfParaBankApplication() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 871019000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid \"john\" and \"demo\" with \"John Smith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"demo\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"John Smith\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Steps.Steps.i_enter_valid_credentials(String,String,String) in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 932742300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be taken to the Overview page",
+            "match": {
+              "location": "Steps.Steps.i_should_be_taken_to_the_Overview_page() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "  In order to do internet banking\n  As a valid Para Bank customer\n  I want to login successfully",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Login.feature",
+    "tags": []
+  }
+]
