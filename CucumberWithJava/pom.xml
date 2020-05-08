@@ -102,7 +102,7 @@
                                 <param>sample.properties</param>
                                 <param>other.properties</param>
                             </classificationFiles>
-                            <!-- <parallelTesting>false</parallelTesting> check later this-->
+                            <!-- <parallelTesting>false</parallelTesting> /check later this-->
                             <!-- optional, set true to fail build on test failures -->
                             <checkBuildResult>false</checkBuildResult>
                         </configuration>
