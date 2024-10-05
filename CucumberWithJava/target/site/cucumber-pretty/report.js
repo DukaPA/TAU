@@ -55,7 +55,8 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.before({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 81\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-PODJ3N9\u0027, ip: \u0027192.168.0.21\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x003B5F73+2449267]\n\tOrdinal0 [0x002E8361+1606497]\n\tOrdinal0 [0x001DF969+522601]\n\tOrdinal0 [0x001705F3+67059]\n\tOrdinal0 [0x0016CD92+52626]\n\tOrdinal0 [0x0018C127+180519]\n\tOrdinal0 [0x0018BF2D+180013]\n\tOrdinal0 [0x00189E5B+171611]\n\tOrdinal0 [0x00171DD8+73176]\n\tOrdinal0 [0x00172E50+77392]\n\tOrdinal0 [0x00172DE9+77289]\n\tOrdinal0 [0x002FD8D7+1693911]\n\tGetHandleVerifier [0x00454036+522726]\n\tGetHandleVerifier [0x00453D74+522020]\n\tGetHandleVerifier [0x00469187+609079]\n\tGetHandleVerifier [0x004548A6+524886]\n\tOrdinal0 [0x002F5CBC+1662140]\n\tOrdinal0 [0x002FF23B+1700411]\n\tOrdinal0 [0x002FF3A3+1700771]\n\tOrdinal0 [0x00315215+1790485]\n\tBaseThreadInitThunk [0x76AAF989+25]\n\tRtlGetAppContainerNamedObjectPath [0x77AF7084+228]\n\tRtlGetAppContainerNamedObjectPath [0x77AF7054+180]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat Steps.Steps.setup(Steps.java:30)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I am in the login page of Para Bank application",
@@ -65,7 +66,7 @@ formatter.match({
   "location": "Steps.Steps.iAmInTheLoginPageOfParaBankApplication() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I enter valid \"john\" and \"demo\" with \"John Smith\"",
@@ -75,7 +76,7 @@ formatter.match({
   "location": "Steps.Steps.i_enter_valid_credentials(String,String,String) in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I should be taken to the Overview page",
@@ -85,10 +86,11 @@ formatter.match({
   "location": "Steps.Steps.i_should_be_taken_to_the_Overview_page() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat Steps.Steps.quietBrowser(Steps.java:64)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "Login Successful",
@@ -96,7 +98,8 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.before({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 81\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-PODJ3N9\u0027, ip: \u0027192.168.0.21\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x003B5F73+2449267]\n\tOrdinal0 [0x002E8361+1606497]\n\tOrdinal0 [0x001DF969+522601]\n\tOrdinal0 [0x001705F3+67059]\n\tOrdinal0 [0x0016CD92+52626]\n\tOrdinal0 [0x0018C127+180519]\n\tOrdinal0 [0x0018BF2D+180013]\n\tOrdinal0 [0x00189E5B+171611]\n\tOrdinal0 [0x00171DD8+73176]\n\tOrdinal0 [0x00172E50+77392]\n\tOrdinal0 [0x00172DE9+77289]\n\tOrdinal0 [0x002FD8D7+1693911]\n\tGetHandleVerifier [0x00454036+522726]\n\tGetHandleVerifier [0x00453D74+522020]\n\tGetHandleVerifier [0x00469187+609079]\n\tGetHandleVerifier [0x004548A6+524886]\n\tOrdinal0 [0x002F5CBC+1662140]\n\tOrdinal0 [0x002FF23B+1700411]\n\tOrdinal0 [0x002FF3A3+1700771]\n\tOrdinal0 [0x00315215+1790485]\n\tBaseThreadInitThunk [0x76AAF989+25]\n\tRtlGetAppContainerNamedObjectPath [0x77AF7084+228]\n\tRtlGetAppContainerNamedObjectPath [0x77AF7054+180]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat Steps.Steps.setup(Steps.java:30)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I am in the login page of Para Bank application",
@@ -106,7 +109,7 @@ formatter.match({
   "location": "Steps.Steps.iAmInTheLoginPageOfParaBankApplication() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I enter valid \"john\" and \"demo\" with \"John Smith\"",
@@ -116,7 +119,7 @@ formatter.match({
   "location": "Steps.Steps.i_enter_valid_credentials(String,String,String) in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I should be taken to the Overview page",
@@ -126,9 +129,10 @@ formatter.match({
   "location": "Steps.Steps.i_should_be_taken_to_the_Overview_page() in file:/C:/Users/Dusan/Gitreps/TAU/CucumberWithJava/target/test-classes/"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\r\n\tat Steps.Steps.quietBrowser(Steps.java:64)\r\n",
+  "status": "failed"
 });
 });
